@@ -799,16 +799,16 @@ video {
   height: 1.5rem;
 }
 
+.h-\[240px\] {
+  height: 240px;
+}
+
 .h-\[30rem\] {
   height: 30rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .w-20 {
@@ -1367,18 +1367,6 @@ video {
   gap: 0.75rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-11 {
-  gap: 2.75rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1685,16 +1673,16 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[25px\] {
+  border-radius: 25px;
+}
+
 .rounded-\[40px\] {
   border-radius: 40px;
 }
 
 .rounded-\[90px\] {
   border-radius: 90px;
-}
-
-.rounded-\[25px\] {
-  border-radius: 25px;
 }
 
 .rounded-b {
@@ -2029,8 +2017,16 @@ video {
   padding-bottom: 1rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-\[90px\] {
   padding-bottom: 90px;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
 }
 
 .pl-7 {
@@ -2091,14 +2087,6 @@ video {
 
 .pt-\[90px\] {
   padding-top: 90px;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-left {
@@ -2180,6 +2168,11 @@ video {
   font-size: 40px;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -2187,15 +2180,6 @@ video {
 
 .text-xl {
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-\[48px\] {
-  font-size: 48px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -2300,6 +2284,11 @@ video {
   color: rgb(101 95 95 / var(--tw-text-opacity));
 }
 
+.text-\[\#927676\] {
+  --tw-text-opacity: 1;
+  color: rgb(146 118 118 / var(--tw-text-opacity));
+}
+
 .text-\[\#BF8989\] {
   --tw-text-opacity: 1;
   color: rgb(191 137 137 / var(--tw-text-opacity));
@@ -2338,11 +2327,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#927676\] {
-  --tw-text-opacity: 1;
-  color: rgb(146 118 118 / var(--tw-text-opacity));
 }
 
 .underline {
