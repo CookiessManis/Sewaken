@@ -2120,6 +2120,11 @@ video {
   padding-bottom: 30px;
 }
 
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -2440,6 +2445,14 @@ video {
 
 .tracking-\[\.50em\] {
   letter-spacing: .50em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-\[\.15em\] {
+  letter-spacing: .15em;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
