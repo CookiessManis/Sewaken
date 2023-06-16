@@ -843,6 +843,10 @@ video {
   height: 240px;
 }
 
+.h-\[25rem\] {
+  height: 25rem;
+}
+
 .h-\[30rem\] {
   height: 30rem;
 }
@@ -1918,6 +1922,10 @@ video {
   background-image: url('img/sadboy.jpg');
 }
 
+.bg-\[url\(\'img\/shop\.PNG\'\)\] {
+  background-image: url('img/shop.PNG');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1936,6 +1944,10 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-auto {
+  background-size: auto;
 }
 
 .bg-cover {
@@ -1973,10 +1985,6 @@ video {
 
 .bg-bottom {
   background-position: bottom;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-top {
@@ -2087,6 +2095,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2100,6 +2113,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[30px\] {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pb-24 {
@@ -2124,6 +2142,10 @@ video {
 
 .pl-7 {
   padding-left: 1.75rem;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
 }
 
 .pr-4 {
@@ -2182,8 +2204,16 @@ video {
   padding-top: 90px;
 }
 
-.pr-14 {
-  padding-right: 3.5rem;
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
+.pb-\[30px\] {
+  padding-bottom: 30px;
 }
 
 .text-left {
@@ -2242,6 +2272,10 @@ video {
   vertical-align: super;
 }
 
+.font-poppins {
+  font-family: Poppins;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2294,6 +2328,22 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-\[36px\] {
+  font-weight: 36px;
+}
+
+.font-\[36\] {
+  font-weight: 36;
+}
+
+.font-\[360\] {
+  font-weight: 360;
+}
+
+.font-\[40px\] {
+  font-weight: 40px;
 }
 
 .uppercase {
@@ -2370,6 +2420,26 @@ video {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.tracking-\[\.25em\] {
+  letter-spacing: .25em;
+}
+
+.tracking-\[\.18em\] {
+  letter-spacing: .18em;
+}
+
+.tracking-\[\.20em\] {
+  letter-spacing: .20em;
+}
+
+.tracking-\[\.40em\] {
+  letter-spacing: .40em;
+}
+
+.tracking-\[\.50em\] {
+  letter-spacing: .50em;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
