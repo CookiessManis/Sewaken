@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Sewaken - Login</title>
+    <title>Sewaken - Verification</title>
   </head>
-  <body>
+  <body class="">
     <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
       <div class="flex items-center flex-shrink-0 mr-6">
         <div class="font-semibold text-xl tracking-tight text">
@@ -66,20 +66,18 @@
     </nav>
 
     <section class="px-6 pt-[80px]">
-      <div class="grid grid-cols-2 gap-2 px-4">
+      <div class="grid grid-cols-2 gap-2 px-4 max-w-full">
         <div class="block">
-          <div
-            class="bg-[url('img/motor.png')] h-[30rem] rounded-[45px] bg-cover bg-center"
-          ></div>
+          <img src="img/motor.PNG" alt="" class="rounded-[40px] shadow-lg" />
         </div>
 
-        <div class="pl-12">
+        <div class="pl-12 pt-10">
           <div class="pb-2 pt-3 font-bold text-black text-2xl">
-            Selamat Datang di <span class="text-[#FF0000]">SEWA</span
-            ><span class="text-[#0F7EA1]">KEN</span>
+            Periksa email Anda untuk tautan verifikasi
           </div>
           <div class="pb-5 text-slate-600 text-sm">
-            Silahkan mendaftar dengan mengisi data pribadi Anda
+            Tidak menerima email? Silahkan periksan email pesan atau coba kirim
+            ulang email
           </div>
           <div>
             <label
@@ -95,75 +93,19 @@
               required
             />
           </div>
-          <div>
-            <label
-              for="Kode verifikasi"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
-              >Kode verifikasi</label
+          <div class="pt-8">
+            <button
+              href="#"
+              class="bg-black text-white px-4 py-2 rounded-[15px]"
             >
-            <input
-              type="text"
-              id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Rusdi"
-              required
-            />
-          </div>
-          <div>
-            <label
-              for="Kode verifikasi"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
-              >Kode verifikasi</label
-            >
-            <input
-              type="text"
-              id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Rusdi"
-              required
-            />
-          </div>
-          <div>
-            <label
-              for="Kode verifikasi"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
-              >Kode verifikasi</label
-            >
-            <input
-              type="text"
-              id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Rusdi"
-              required
-            />
-          </div>
-
-          <div class="flex pt-4">
-            <div>
-              <input type="checkbox" class="shadow-lg" />
-            </div>
-            <div class="pl-4">
-              Accept <span class="text-[#1688AC]">Terms of Service</span> and
-              <span class="text-[#1688AC]">Privacy Policy</span>
-            </div>
-          </div>
-
-          <!--  -->
-          <div class="pt-4">
-            <a href="verification.html"
-              ><button
-                href="verification.html"
-                class="bg-black text-white px-14 py-2 rounded-[14px]"
-              >
-                Daftar
-              </button></a
-            >
+              Kirim Ulang Verifikasi
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="pt-[80px]">
+    <footer class="pt-[80px] py-4">
       <div class="px-6 py-8 bg-[#F2F1F6]">
         <div class="font-semibold text-xl tracking-tight text">
           <span class="text-red-500"
