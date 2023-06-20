@@ -1976,6 +1976,14 @@ video {
   background-image: url('img/shop.PNG');
 }
 
+.bg-\[url\(\'img\/motorcycle\.png\'\)\] {
+  background-image: url('img/motorcycle.png');
+}
+
+.bg-\[url\(\'img\/motorcycle\.jpg\'\)\] {
+  background-image: url('img/motorcycle.jpg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
