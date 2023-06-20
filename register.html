@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Sewaken - login</title>
+    <title>Sewaken - Login</title>
   </head>
   <body>
     <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
@@ -60,7 +60,7 @@
         </div>
         <div>
           <a href="login.html" class="text-blue-500 pr-4">Login</a>
-          <a href="register.html" class="text-blue-500 pr-4">Daftar</a>
+          <a href="#" class="text-blue-500 pr-4">Daftar</a>
         </div>
       </div>
     </nav>
@@ -73,7 +73,7 @@
           ></div>
         </div>
 
-        <div class="pl-12 pt-8">
+        <div class="pl-12 pt-4">
           <div class="pb-2 pt-3 font-bold text-black text-2xl">
             Selamat Datang di <span class="text-[#FF0000]">SEWA</span
             ><span class="text-[#0F7EA1]">KEN</span>
@@ -98,6 +98,19 @@
 
           <div class="pt-4">
             <label
+              for="Email"
+              class="block mb-2 text-sm font-medium text-black dark:text-white"
+              >Email</label
+            >
+            <input
+              type="text"
+              id="first_name"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required
+            />
+          </div>
+          <div class="pt-4">
+            <label
               for="Password"
               class="block mb-2 text-sm font-medium text-black dark:text-white"
               >Password</label
@@ -110,21 +123,24 @@
             />
           </div>
 
-          <div class="flex">
-            <div><a href=""></a></div>
+          <div class="flex pt-4">
+            <div>
+              <input type="checkbox" class="shadow-lg" />
+            </div>
+            <div class="pl-4">
+              Accept <span class="text-[#1688AC]">Terms of Service</span> and
+              <span class="text-[#1688AC]">Privacy Policy</span>
+            </div>
           </div>
 
-          <div class="pt-4">
-            <a href="register.html">Belum Punya Akun?</a>
-          </div>
           <!--  -->
           <div class="pt-4">
-            <a href="index.html"
+            <a href="verification.html"
               ><button
-                href="index.html"
+                href="verification.html"
                 class="bg-black text-white px-14 py-2 rounded-[14px]"
               >
-                Login
+                Daftar
               </button></a
             >
           </div>

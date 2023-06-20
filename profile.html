@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Sewaken - login</title>
+    <title>Sewaken - Profile</title>
   </head>
   <body>
     <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
@@ -65,69 +65,54 @@
       </div>
     </nav>
 
-    <section class="px-6 pt-[80px]">
-      <div class="grid grid-cols-2 gap-2 px-4">
-        <div class="block">
-          <div
-            class="bg-[url('img/motor.png')] h-[30rem] rounded-[45px] bg-cover bg-center"
-          ></div>
+    <section class="px-6 pt-[80px] flex place-content-center">
+      <div class="w-[50%]">
+        <h2 class="px-4 py-2 text-[#7B7B7B]">Pengaturan Profile</h2>
+        <hr class="border-black" />
+        <div class="pt-[20px] flex">
+          <div class="pl-7">
+            <div
+              class="bg-[url('img/motor.png')] h-[7rem] w-[7rem] rounded-full bg-cover bg-center"
+            ></div>
+          </div>
+
+          <div class="grid grid-cols-3 pl-14 w-full">
+            <div class="text-[#7B7B7B]">Username</div>
+            <div class="text-[#7B7B7B]">Cookiess</div>
+            <div class="px-7 text-[#FF0000] font-bold">
+              <a href="#" class="drop-shadow-lg">Ubah</a>
+            </div>
+            <div class="text-[#7B7B7B]">Email</div>
+            <div class="text-[#7B7B7B]">Cookiess@gmail.com</div>
+            <div class="px-7 text-[#FF0000] font-bold">
+              <a href="#" class="drop-shadow-lg">Ubah</a>
+            </div>
+            <div class="text-[#7B7B7B]">No telp</div>
+            <div class="text-[#7B7B7B]">40042</div>
+            <div class="px-7 text-[#FF0000] font-bold">
+              <a href="#" class="drop-shadow-lg">Ubah</a>
+            </div>
+          </div>
         </div>
-
-        <div class="pl-12 pt-8">
-          <div class="pb-2 pt-3 font-bold text-black text-2xl">
-            Selamat Datang di <span class="text-[#FF0000]">SEWA</span
-            ><span class="text-[#0F7EA1]">KEN</span>
-          </div>
-          <div class="pb-5 text-slate-600 text-sm">
-            Silahkan mendaftar dengan mengisi data pribadi Anda
-          </div>
-          <div class="pt-4">
-            <label
-              for="Username"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
-              >Username</label
-            >
-            <input
-              type="text"
-              id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder=""
-              required
-            />
-          </div>
-
-          <div class="pt-4">
-            <label
-              for="Password"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
-              >Password</label
-            >
-            <input
-              type="text"
-              id="first_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              required
-            />
-          </div>
-
-          <div class="flex">
-            <div><a href=""></a></div>
-          </div>
-
-          <div class="pt-4">
-            <a href="register.html">Belum Punya Akun?</a>
-          </div>
-          <!--  -->
+        <!--  -->
+        <div class="pt-4">
           <div class="pt-4">
             <a href="index.html"
               ><button
                 href="index.html"
-                class="bg-black text-white px-14 py-2 rounded-[14px]"
+                class="bg-black text-white px-14 py-2 rounded-[10px]"
               >
-                Login
+                Ubah foto
               </button></a
             >
           </div>
+        </div>
+        <!--  -->
+        <div class="w-[30%] pt-3 text-center">
+          <h5 class="text-xs font-normal text-[#797979]">
+            Besar file: maksimum <br />
+            (5 Megabytes). Ekstensi file yang diperbolehkan: .JPG .JPEG .PNG
+          </h5>
         </div>
       </div>
     </section>
