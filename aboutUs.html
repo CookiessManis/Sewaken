@@ -2,21 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;1,300;1,500&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="output.css" />
-
-    <title>Sewaken - About us</title>
+    <title>Sewaken - About Us</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
   </head>
   <body class="w-full h-full">
-    <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
+    <nav
+      class="flex items-center justify-between flex-wrap shadow-md p-6 font-poppins"
+    >
       <div class="flex items-center flex-shrink-0 mr-6">
-        <div class="font-semibold text-xl tracking-tight text">
+        <div class="font-semibold text-xl tracking-tight">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
           >
@@ -42,15 +59,9 @@
         <div class="text-sm lg:flex-grow">
           <a
             href="index.html"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4 underline"
           >
             Home
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
-          >
-            Akun
           </a>
           <a
             href="#responsive-header"
@@ -60,14 +71,64 @@
           </a>
           <a
             href="aboutUs.html"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 underline"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200"
           >
             About
           </a>
         </div>
         <div>
-          <a href="login.html" class="text-blue-500 pr-4">Login</a>
-          <a href="#" class="text-blue-500 pr-4">Daftar</a>
+          <button
+            id="dropdownDividerButton"
+            data-dropdown-toggle="dropdownDivider"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              class="w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownDivider"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDividerButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Akun</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Riwayat Transaksi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

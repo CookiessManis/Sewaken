@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-
     <link rel="stylesheet" href="output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,10 +11,27 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,800;1,300;1,500&display=swap"
       rel="stylesheet"
     />
-    <title>Sewaken</title>
+    <title>Sewaken - Home</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
   </head>
   <body class="w-full h-full">
-    <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
+    <nav
+      class="flex items-center justify-between flex-wrap shadow-md p-6 font-poppins px-10"
+    >
       <div class="flex items-center flex-shrink-0 mr-6">
         <div class="font-semibold text-xl tracking-tight">
           <span class="text-red-500"
@@ -52,12 +67,6 @@
             href="#responsive-header"
             class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
           >
-            Akun
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
-          >
             Sewa
           </a>
           <a
@@ -68,8 +77,58 @@
           </a>
         </div>
         <div>
-          <a href="login.html" class="text-blue-500 pr-4">Login</a>
-          <a href="#" class="text-blue-500 pr-4">Daftar</a>
+          <button
+            id="dropdownDividerButton"
+            data-dropdown-toggle="dropdownDivider"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              class="w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownDivider"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDividerButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Akun</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Riwayat Transaksi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -77,15 +136,15 @@
     <!-- endnavbar -->
 
     <!-- section -->
-    <main class="px-6 pt-[80px]">
+    <main class="px-10 pt-[80px]">
       <div class="grid grid-cols-2 gap-2 px-4 max-w-full">
         <div class="">
-          <div class="pb-4 pt-3 font-bold text-black text-2xl">
+          <div class="pb-4 pt-3 font-bold text-black text-2xl font-poppins">
             Dapatkan pengalaman terbaik anda <br />
             dalam bepergian <br />
             dengan layanan kami
           </div>
-          <div class="pb-4 text-slate-600">
+          <div class="pb-4 text-slate-600 text-sm font-poppins">
             Kami menyediakan jasa sewa motor dengan harga yang terjangkau dan
             pilihan motor yang sesuai dengan kebutuhan Anda.
           </div>
@@ -104,17 +163,125 @@
       </div>
     </main>
 
-    <div class="pt-[130px]">
+    <!-- list motorcycle -->
+
+    <div class="px-10 pt-[80px]">
+      <div class="flex justify-between">
+        <div class="text-xl font-semibold font-poppins">
+          Rekomendasi untuk Anda
+        </div>
+        <button
+          class="text-black font-poppins text-lg px-2 py-3 bg-gray-300 rounded-lg"
+        >
+          Lihat Semua
+        </button>
+      </div>
+      <!-- card -->
+      <div class="pt-4 px-20">
+        <div class="flex justify-center">
+          <div class="w-48 h-56 bg-gray-300 border-black rounded-2xl">
+            <img
+              src="img/vespa_kuning.jpg"
+              class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+              alt=""
+            />
+            <div class="flex justify-between">
+              <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                Vespa
+              </div>
+              <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="font-light text-xs pl-2">2018</div>
+              <div class="pr-2 font-semibold font-poppins text-xs">
+                RP.55000
+                <span class="font-light font-sm font-poppins"> /jam</span>
+              </div>
+            </div>
+          </div>
+          <div class="pl-16">
+            <div class="w-48 h-56 bg-gray-300 border-black rounded-2xl">
+              <img
+                src="img/vespa_kuning.jpg"
+                class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+                alt=""
+              />
+              <div class="flex justify-between">
+                <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                  Vespa
+                </div>
+                <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
+              </div>
+              <div class="flex justify-between">
+                <div class="font-light text-xs pl-2">2018</div>
+                <div class="pr-2 font-semibold font-poppins text-xs">
+                  RP.55000
+                  <span class="font-light font-sm font-poppins"> /jam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pl-16">
+            <div class="w-48 h-56 bg-gray-300 border-black rounded-2xl">
+              <img
+                src="img/vespa_kuning.jpg"
+                class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+                alt=""
+              />
+              <div class="flex justify-between">
+                <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                  Vespa
+                </div>
+                <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
+              </div>
+              <div class="flex justify-between">
+                <div class="font-light text-xs pl-2">2018</div>
+                <div class="pr-2 font-semibold font-poppins text-xs">
+                  RP.55000
+                  <span class="font-light font-sm font-poppins"> /jam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pl-16">
+            <div class="w-48 h-56 bg-gray-300 border-black rounded-2xl">
+              <img
+                src="img/vespa_kuning.jpg"
+                class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+                alt=""
+              />
+              <div class="flex justify-between">
+                <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                  Vespa
+                </div>
+                <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
+              </div>
+              <div class="flex justify-between">
+                <div class="font-light text-xs pl-2">2018</div>
+                <div class="pr-2 font-semibold font-poppins text-xs">
+                  RP.55000
+                  <span class="font-light font-sm font-poppins"> /jam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- endCard -->
+    </div>
+    <!-- endlist motorcycle -->
+
+    <div class="pt-[80px]">
       <div
-        class="bg-[url('img/sadboy.jpg')] h-[30rem] bg-cover bg-bottom bg-no-repeat"
+        class="bg-[url('img/sadboy.jpg')] h-[25rem] bg-cover bg-bottom bg-no-repeat"
       >
         <p
-          class="text-center text-[#BF8989] pt-[70px] text-4xl font-extrabold tracking-[.45em]"
+          class="text-center text-[#BF8989] pt-14 text-3xl font-extrabold tracking-[.45em] font-poppins"
         >
           SLOGAN KAMI
         </p>
         <p
-          class="pt-[90px] text-[#C7B0B0] text-center text-[40px] font-extrabold"
+          class="pt-14 text-[#C7B0B0] text-center font-extrabold tracking-[.45em] text-3xl font-poppins"
         >
           "Tidak pernah menolak <br />
           pembeli walau permintaannya <br />
@@ -123,75 +290,183 @@
       </div>
     </div>
 
-    <div class="pt-[90px]">
+    <div class="py-[80px]">
       <p
-        class="text-center text-black text-4xl font-extrabold tracking-[.45em]"
+        class="text-center text-black text-3xl font-poppins font-extrabold tracking-[.45em]"
       >
         SPONSOR KAMI
       </p>
-      <div class="flex justify-around pt-[80px]">
+      <div class="flex justify-around pt-14">
         <h2 class="text-black font-semibold text-[30px font-poppins]">
           Kami bangga dan berterima kasih kepada para <br />
           sponsor kami yang telah menjadi mitra berharga <br />
           dalam perjalanan kesuksesan kami.
         </h2>
-        <div class="flex w-14 px-6 pt-6 gap-3">
-          <img src="img/yamaha.svg" class="w-10" alt="" />
-          <img src="img/suzuki.svg" class="w-10" alt="" />
-          <img src="img/ktm.svg" class="w-10" alt="" />
-          <img src="img/ducati.svg" class="w-10" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-[130px]">
-      <div class="bg-[#F2F1F6] h-[30rem]">
-        <p class="text-center pt-[80px] text-3xl opacity-80">
-          Bagaimana Cara Melakukan Sewa Motor
-        </p>
-        <p class="text-center pt-[37px] font-bold text-[20px]">
-          Ikuti 3 Langkah Berikut Ini
-        </p>
-        <div class="py-14">
-          <div class="grid grid-cols-3 text-center">
-            <img
-              src="https://img.icons8.com/ios-filled/50/gender-neutral-user.png"
-              alt="gender-neutral-user"
-              class="mx-auto w-20"
-            />
-            <img src="img/vespa.png" alt="" class="w-20 mx-auto" />
-            <img src="img/payment.png" alt="" class="w-20 mx-auto" />
-            <p class="font-light pt-2">Create a account</p>
-            <p class="font-light pt-2">Choose Your Motorcycle</p>
-            <p class="font-light pt-2">Pay Your Bill Online</p>
+        <div class="flex px-6 pt-6 gap-3">
+          <div class="">
+            <img src="img/yamaha.svg" class="w-14" alt="" />
+          </div>
+          <div class="pl-10">
+            <img src="img/suzuki.svg" class="w-14" alt="" />
+          </div>
+          <div class="pl-10">
+            <img src="img/ktm.svg" class="w-14" alt="" />
+          </div>
+          <div class="pl-10">
+            <img src="img/ducati.svg" class="w-14" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="px-6 pt-16">
-      <p class="font-light text-3xl text-black text-center">
+    <div class="pt-20">
+      <div class="bg-gray-200">
+        <div class="font-semibold font-poppins text-lg text-center pt-10">
+          Bagaimana Cara Melakukan <br />
+          Sewa Motor
+        </div>
+        <div class="font-poppins text-sm text-center pt-10">
+          Dengan panduan langkah demi langkah ini, Anda akan tahu persis
+          bagaimana cara melakukan sewa <br />
+          motor dengan mudah dan cepat.
+        </div>
+        <div class="flex justify-center pt-5 pb-20">
+          <div class="w-72 bg-black rounded-2xl px-3 py-3 h-72">
+            <div
+              class="text-white font-poppins font-extrabold text-xl px-3 py-2"
+            >
+              1
+            </div>
+            <hr class="text-white pl-5 pt-2" />
+            <div class="text-white font-extrabold text-lg font-poppins py-2">
+              Membuat Akun
+            </div>
+            <div class="text-xs text-white pt-2 font-poppins font-normal py-3">
+              “Register” klik tombol tersebut dan isi informasi pribadi Anda
+              dengan lengkap. Berikan nama lengkap, alamat email yang valid,
+              nomor telepon, dan buatlah kata sandi yang aman. Dengan akun
+              pribadi, Anda akan memiliki akses penuh ke layanan kami.
+            </div>
+          </div>
+          <div class="pl-10">
+            <div class="w-72 bg-black rounded-2xl px-3 py-3 h-72">
+              <div
+                class="text-white font-poppins font-extrabold text-xl px-3 py-2"
+              >
+                2
+              </div>
+              <hr class="text-white pl-5 pt-2" />
+              <div class="text-white font-extrabold text-lg font-poppins py-2">
+                Pilih Sepeda Motor Anda
+              </div>
+              <div
+                class="text-xs text-white pt-2 font-poppins font-normal py-3"
+              >
+                kami menyediakan beragam pilihan yang sesuai dengan kebutuhan
+                dan preferensi Anda. Dapatkan informasi detail tentang setiap
+                sepeda motor, termasuk gambar, spesifikasi, dan harga sewa.
+              </div>
+            </div>
+          </div>
+          <div class="pl-10">
+            <div class="w-72 bg-black rounded-2xl px-3 py-3 h-72">
+              <div
+                class="text-white font-poppins font-extrabold text-xl px-3 py-2"
+              >
+                3
+              </div>
+              <hr class="text-white pl-5 pt-2" />
+              <div class="text-white font-extrabold text-lg font-poppins py-2">
+                Bayar tagihan Anda
+              </div>
+              <div
+                class="text-xs text-white pt-2 font-poppins font-normal py-3"
+              >
+                Kami menyediakan fasilitas pembayaran online yang aman dan
+                mudah. Cukup masukkan rincian kartu kredit atau menggunakan
+                metode pembayaran online lainnya yang kami terima, dan bayar
+                tagihan Anda dengan cepat dan efisien. Namun Anda juga dapat
+                melakukan pembayaran di tempat
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-20">
+      <div class="font-bold font-poppins text-2xl text-black text-center">
         Apa yang dikatakan pelanggan kami
-      </p>
-      <div class="pt-8 pb-24">
-        <div class="grid grid-cols-2 gap-3 px-4 max-w-full">
-          <div>
-            <img src="img/man.PNG" alt="" class="rounded-[40px]" />
+      </div>
+      <div class="flex justify-center pt-10">
+        <div class="w-80 bg-gray-200 rounded-xl border-black border-2">
+          <div class="font-semibold text-xl font-poppins pl-4 pt-5">
+            Hemat Waktu
           </div>
-          <div>
-            <h2 class="font-light text-2xl pl-7 pt-7">Rusdi</h2>
-            <p class="pl-7 pt-7 font-light text-xl">
-              Saya sangat senang menggunakan jasa sewa motor dari SewaKen.
-              Mereka menawarkan layanan persewaan motor yang sangat nyaman dan
-              mudah. Proses pemesanan motor sangat cepat dan efisien
-            </p>
+          <div class="font-medium font-poppins pl-4 pt-2">
+            Untuk melakukan persewaan motor, dapat dilakukan dimanapun dan
+            kapanpun
+          </div>
+          <div class="flex">
+            <div class="pl-4 pt-2 pb-8">
+              <img src="img/waduh.png" class="rounded-full w-16 h-16" alt="" />
+            </div>
+            <div class="pt-6 pl-3 font-medium font-poppins text-sm">
+              Mr.Waduh
+            </div>
+          </div>
+        </div>
+        <div class="pl-10">
+          <div class="w-80 bg-gray-200 rounded-xl border-black border-2">
+            <div class="font-semibold text-xl font-poppins pl-4 pt-5">
+              Hemat Waktu
+            </div>
+            <div class="font-medium font-poppins pl-4 pt-2">
+              Untuk melakukan persewaan motor, dapat dilakukan dimanapun dan
+              kapanpun
+            </div>
+            <div class="flex">
+              <div class="pl-4 pt-2 pb-8">
+                <img
+                  src="img/waduh.png"
+                  class="rounded-full w-16 h-16"
+                  alt=""
+                />
+              </div>
+              <div class="pt-6 pl-3 font-medium font-poppins text-sm">
+                Mr.Waduh
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pl-10">
+          <div class="w-80 bg-gray-200 rounded-xl border-black border-2">
+            <div class="font-semibold text-xl font-poppins pl-4 pt-5">
+              Hemat Waktu
+            </div>
+            <div class="font-medium font-poppins pl-4 pt-2">
+              Untuk melakukan persewaan motor, dapat dilakukan dimanapun dan
+              kapanpun
+            </div>
+            <div class="flex">
+              <div class="pl-4 pt-2 pb-8">
+                <img
+                  src="img/waduh.png"
+                  class="rounded-full w-16 h-16"
+                  alt=""
+                />
+              </div>
+              <div class="pt-6 pl-3 font-medium font-poppins text-sm">
+                Mr.Waduh
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <footer class="pt-12 py-4">
-      <div class="px-6 py-8 bg-[#F2F1F6]">
+      <div class="px-10 py-8 bg-[#F2F1F6]">
         <div class="font-semibold text-xl tracking-tight text">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
@@ -241,7 +516,7 @@
           </div>
         </div>
       </div>
-      <div class="px-6">
+      <div class="px-10">
         <hr class="border-black w-full" />
 
         <div class="flex justify-between py-2">
@@ -254,5 +529,6 @@
         </div>
       </div>
     </footer>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
