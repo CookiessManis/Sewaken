@@ -2,14 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Sewaken - login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Sewaken - Login</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
   </head>
-  <body>
-    <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
+  <body class="font-poppins">
+    <nav
+      class="flex items-center justify-between flex-wrap shadow-md p-6 font-poppins px-10"
+    >
       <div class="flex items-center flex-shrink-0 mr-6">
-        <div class="font-semibold text-xl tracking-tight text">
+        <div class="font-semibold text-xl tracking-tight">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
           >
@@ -35,15 +56,9 @@
         <div class="text-sm lg:flex-grow">
           <a
             href="index.html"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4 underline"
           >
             Home
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
-          >
-            Akun
           </a>
           <a
             href="#responsive-header"
@@ -58,31 +73,26 @@
             About
           </a>
         </div>
-        <div>
-          <a href="login.html" class="text-blue-500 pr-4">Login</a>
-          <a href="register.html" class="text-blue-500 pr-4">Daftar</a>
         </div>
+        <div class="font-poppins text-xl text-blue-500"><a href="login.html">Login</a></div>
+      </div>
       </div>
     </nav>
+    <!-- navigation -->
 
-    <section class="px-6 pt-[80px]">
+    <section class="px-10 pt-20">
       <div class="grid grid-cols-2 gap-2 px-4">
-        <div
-          class="bg-[url('img/motorcycle.jpg')] h-[30rem] rounded-[45px] bg-cover bg-center"
-        ></div>
+        <img src="img/motorcycle.jpg" class="w-full rounded-3xl" alt="" />
 
-        <div class="pl-12 pt-8">
-          <div class="pb-2 pt-3 font-bold text-black text-2xl">
+        <div class="pl-12 pt-3">
+          <div class="pb-2 pt-3 font-semibold text-black text-2xl font-poppins">
             Selamat Datang di <span class="text-[#FF0000]">SEWA</span
             ><span class="text-[#0F7EA1]">KEN</span>
-          </div>
-          <div class="pb-5 text-slate-600 text-sm">
-            Silahkan mendaftar dengan mengisi data pribadi Anda
           </div>
           <div class="pt-4">
             <label
               for="Username"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
+              class="block mb-2 text-sm font-medium text-black dark:text-white font-poppins"
               >Username</label
             >
             <input
@@ -97,7 +107,7 @@
           <div class="pt-4">
             <label
               for="Password"
-              class="block mb-2 text-sm font-medium text-black dark:text-white"
+              class="block mb-2 text-sm font-medium text-black dark:text-white font-poppins"
               >Password</label
             >
             <input
@@ -113,14 +123,21 @@
           </div>
 
           <div class="pt-4">
-            <a href="register.html">Belum Punya Akun?</a>
+            <div class="font-medium font-poppins text-sm">
+              Belum punya akun?
+              <a
+                href="register.html"
+                class="font-poppins font-medium text-sm text-[#0F7EA1] underline"
+                >Register</a
+              >
+            </div>
           </div>
           <!--  -->
           <div class="pt-4">
             <a href="index.html"
               ><button
                 href="index.html"
-                class="bg-black text-white px-14 py-2 rounded-[14px]"
+                class="bg-black text-white px-14 py-3 rounded-xl font-poppins w-full"
               >
                 Login
               </button></a
@@ -130,8 +147,9 @@
       </div>
     </section>
 
-    <footer class="pt-[80px]">
-      <div class="px-6 py-8 bg-[#F2F1F6]">
+
+    <footer class="pt-20">
+      <div class="px-10 py-8 bg-[#F2F1F6]">
         <div class="font-semibold text-xl tracking-tight text">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
@@ -181,7 +199,7 @@
           </div>
         </div>
       </div>
-      <div class="px-6">
+      <div class="px-10">
         <hr class="border-black w-full" />
 
         <div class="flex justify-between py-2">
@@ -194,5 +212,6 @@
         </div>
       </div>
     </footer>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>

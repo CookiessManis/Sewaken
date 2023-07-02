@@ -12,7 +12,10 @@
       rel="stylesheet"
     />
     <title>Sewaken - Home</title>
-
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -27,10 +30,10 @@
   </head>
   <body class="w-full h-full font-poppins">
     <nav
-      class="flex items-center justify-between flex-wrap shadow-md p-6 px-10"
+      class="flex items-center justify-between flex-wrap shadow-md p-6 font-poppins px-10"
     >
       <div class="flex items-center flex-shrink-0 mr-6">
-        <div class="font-semibold text-xl tracking-tight font-poppins">
+        <div class="font-semibold text-xl tracking-tight">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
           >
@@ -73,60 +76,7 @@
             About
           </a>
         </div>
-        <div>
-          <button
-            id="dropdownDividerButton"
-            data-dropdown-toggle="dropdownDivider"
-          >
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              class="w-10 h-10"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-              ></path>
-            </svg>
-          </button>
-          <!-- Dropdown menu -->
-          <div
-            id="dropdownDivider"
-            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-          >
-            <ul
-              class="py-2 text-sm text-gray-700 dark:text-gray-200"
-              aria-labelledby="dropdownDividerButton"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Akun</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Riwayat Transaksi</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >Logout</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+        <div class="font-poppins text-xl"><a href="login.html">Login</a></div>
       </div>
     </nav>
 
@@ -167,25 +117,19 @@
         <div class="text-xl font-semibold font-poppins">
           Rekomendasi untuk Anda
         </div>
-        <div>
-          <a href="sewa.html"
-            ><button
-              class="text-black font-poppins text-lg px-2 py-3 bg-gray-300 rounded-lg"
-            >
-              Lihat Semua
-            </button></a
-          >
-        </div>
+        <button
+          class="text-black font-poppins text-lg px-2 py-3 bg-gray-300 rounded-lg"
+        >
+          Lihat Semua
+        </button>
       </div>
       <!-- card -->
       <div class="pt-4 px-20">
-        <div
-          class="flex justify-center flex-row space-x-16 place-content-center"
-        >
+        <div class="flex justify-center">
           <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
             <img
               src="img/vespa_kuning.jpg"
-              class="w-full rounded-tl-2xl rounded-tr-2xl bg-center"
+              class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
               alt=""
             />
             <div class="flex justify-between">
@@ -202,63 +146,69 @@
               </div>
             </div>
           </div>
-          <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
-            <img
-              src="img/vespa_kuning.jpg"
-              class="w-full rounded-tl-2xl rounded-tr-2xl bg-center"
-              alt=""
-            />
-            <div class="flex justify-between">
-              <div class="pl-2 text-xs font-poppins pt-3 font-normal">
-                Vespa
+          <div class="pl-16">
+            <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
+              <img
+                src="img/vespa_kuning.jpg"
+                class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+                alt=""
+              />
+              <div class="flex justify-between">
+                <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                  Vespa
+                </div>
+                <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
               </div>
-              <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="font-light text-xs pl-2">2018</div>
-              <div class="pr-2 font-semibold font-poppins text-xs">
-                RP.55000
-                <span class="font-light font-sm font-poppins"> /jam</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
-            <img
-              src="img/vespa_kuning.jpg"
-              class="w-full rounded-tl-2xl rounded-tr-2xl bg-center"
-              alt=""
-            />
-            <div class="flex justify-between">
-              <div class="pl-2 text-xs font-poppins pt-3 font-normal">
-                Vespa
-              </div>
-              <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
-            </div>
-            <div class="flex justify-between">
-              <div class="font-light text-xs pl-2">2018</div>
-              <div class="pr-2 font-semibold font-poppins text-xs">
-                RP.55000
-                <span class="font-light font-sm font-poppins"> /jam</span>
+              <div class="flex justify-between">
+                <div class="font-light text-xs pl-2">2018</div>
+                <div class="pr-2 font-semibold font-poppins text-xs">
+                  RP.55000
+                  <span class="font-light font-sm font-poppins"> /jam</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
-            <img
-              src="img/vespa_kuning.jpg"
-              class="w-full rounded-tl-2xl rounded-tr-2xl bg-center"
-              alt=""
-            />
-            <div class="flex justify-between">
-              <div class="pl-2 text-xs font-poppins pt-3 font-normal">
-                Vespa
+          <div class="pl-16">
+            <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
+              <img
+                src="img/vespa_kuning.jpg"
+                class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+                alt=""
+              />
+              <div class="flex justify-between">
+                <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                  Vespa
+                </div>
+                <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
               </div>
-              <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
+              <div class="flex justify-between">
+                <div class="font-light text-xs pl-2">2018</div>
+                <div class="pr-2 font-semibold font-poppins text-xs">
+                  RP.55000
+                  <span class="font-light font-sm font-poppins"> /jam</span>
+                </div>
+              </div>
             </div>
-            <div class="flex justify-between">
-              <div class="font-light text-xs pl-2">2018</div>
-              <div class="pr-2 font-semibold font-poppins text-xs">
-                RP.55000
-                <span class="font-light font-sm font-poppins"> /jam</span>
+          </div>
+          <div class="pl-16">
+            <div class="w-48 h-56 bg-gray-200 border-black rounded-2xl">
+              <img
+                src="img/vespa_kuning.jpg"
+                class="w-[75%] rounded-tl-2xl rounded-tr-2xl bg-center"
+                alt=""
+              />
+              <div class="flex justify-between">
+                <div class="pl-2 text-xs font-poppins pt-3 font-normal">
+                  Vespa
+                </div>
+                <div class="pr-2 pt-2 text-yellow-500 text-base">*****</div>
+              </div>
+              <div class="flex justify-between">
+                <div class="font-light text-xs pl-2">2018</div>
+                <div class="pr-2 font-semibold font-poppins text-xs">
+                  RP.55000
+                  <span class="font-light font-sm font-poppins"> /jam</span>
+                </div>
               </div>
             </div>
           </div>
@@ -278,7 +228,7 @@
           SLOGAN KAMI
         </p>
         <p
-          class="pt-20 text-[#C7B0B0] text-center font-extrabold tracking-[.45em] text-3xl font-poppins"
+          class="pt-14 text-[#C7B0B0] text-center font-extrabold tracking-[.45em] text-3xl font-poppins"
         >
           "Tidak pernah menolak <br />
           pembeli walau permintaannya <br />

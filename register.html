@@ -2,14 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <title>Sewaken - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Sewaken - Register</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+    ></script>
   </head>
-  <body>
-    <nav class="flex items-center justify-between flex-wrap shadow-md p-6">
+  <body class="font-poppins">
+    <nav
+      class="flex items-center justify-between flex-wrap shadow-md p-6 font-poppins px-10"
+    >
       <div class="flex items-center flex-shrink-0 mr-6">
-        <div class="font-semibold text-xl tracking-tight text">
+        <div class="font-semibold text-xl tracking-tight">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
           >
@@ -35,15 +56,9 @@
         <div class="text-sm lg:flex-grow">
           <a
             href="index.html"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4 underline"
           >
             Home
-          </a>
-          <a
-            href="#responsive-header"
-            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
-          >
-            Akun
           </a>
           <a
             href="#responsive-header"
@@ -58,22 +73,17 @@
             About
           </a>
         </div>
-        <div>
-          <a href="login.html" class="text-blue-500 pr-4">Login</a>
-          <a href="#" class="text-blue-500 pr-4">Daftar</a>
         </div>
+        <div class="font-poppins text-xl text-blue-500"><a href="login.html">Login</a></div>
+      </div>
       </div>
     </nav>
 
-    <section class="px-6 pt-[80px]">
+    <section class="px-10 pt-[80px]">
       <div class="grid grid-cols-2 gap-2 px-4">
-        <div class="block">
-          <div
-            class="bg-[url('img/motor.png')] h-[30rem] rounded-[45px] bg-cover bg-center"
-          ></div>
-        </div>
+         <img src="img/motorcycle.jpg" class="w-full h-full rounded-3xl" alt="" />
 
-        <div class="pl-12 pt-4">
+        <div class="pl-12 ">
           <div class="pb-2 pt-3 font-bold text-black text-2xl">
             Selamat Datang di <span class="text-[#FF0000]">SEWA</span
             ><span class="text-[#0F7EA1]">KEN</span>
@@ -125,7 +135,7 @@
 
           <div class="flex pt-4">
             <div>
-              <input type="checkbox" class="shadow-lg" />
+              <input type="checkbox" class="shadow-lg cursor-pointer" />
             </div>
             <div class="pl-4">
               Accept <span class="text-[#1688AC]">Terms of Service</span> and
@@ -138,18 +148,19 @@
             <a href="verification.html"
               ><button
                 href="verification.html"
-                class="bg-black text-white px-14 py-2 rounded-[14px]"
+                class="bg-black text-white px-14 py-3 rounded-[14px] w-full font-poppins"
               >
                 Daftar
               </button></a
             >
           </div>
+          <div class="font-poppins font-light text-xs pt-1">Sudah punya akun ? <a href="login.html"> <span class="text-blue-500 underline">Log in</span></a></div>
         </div>
       </div>
     </section>
 
-    <footer class="pt-[80px]">
-      <div class="px-6 py-8 bg-[#F2F1F6]">
+    <footer class=" pt-[80px]">
+      <div class="px-10 py-8 bg-[#F2F1F6]">
         <div class="font-semibold text-xl tracking-tight text">
           <span class="text-red-500"
             >SEWA<span class="text-blue-500">KEN</span></span
@@ -199,10 +210,10 @@
           </div>
         </div>
       </div>
-      <div class="px-6">
+      <div class="px-10">
         <hr class="border-black w-full" />
 
-        <div class="flex justify-between py-2">
+        <div class="flex justify-between py-2 ">
           <div>2077 untitled Ui. All right reserved.</div>
           <div class="flex gap-3">
             <img src="img/twitter.png" class="w-6 h-6" alt="" />
