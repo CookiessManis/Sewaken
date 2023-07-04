@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sewaken - Detail Sewa</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav
+      class="flex items-center justify-between flex-wrap shadow-md p-6 px-10"
+    >
+      <div class="flex items-center flex-shrink-0 mr-6">
+        <div class="font-semibold text-xl tracking-tight font-poppins">
+          <span class="text-red-500"
+            >SEWA<span class="text-blue-500">KEN</span></span
+          >
+        </div>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center"
+      >
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="index.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4 underline"
+          >
+            Home
+          </a>
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200 mr-4"
+          >
+            Sewa
+          </a>
+          <a
+            href="aboutUs.html"
+            class="block mt-4 lg:inline-block lg:mt-0 text-blue-500 hover:text-blue-200"
+          >
+            About
+          </a>
+        </div>
+        <div>
+          <button
+            id="dropdownDividerButton"
+            data-dropdown-toggle="dropdownDivider"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              class="w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdownDivider"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+          >
+            <ul
+              class="py-2 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDividerButton"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Akun</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Riwayat Transaksi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <div class="px-10 pt-10">
+      <div class="flex" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a
+              href="#"
+              class="inline-flex items-center text-sm text-gray-400 font-poppins font-light hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
+              Sewa
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              /
+              <a
+                href="#"
+                class="ml-1 text-sm font-medium text-gray-400 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+                >Vespa</a
+              >
+            </div>
+          </li>
+          <li class="flex items-center">
+            /
+            <a
+              href="#"
+              class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              >Transaction</a
+            >
+          </li>
+        </ol>
+      </div>
+
+      <div class="pt-10">
+        <div class="flex justify-between">
+          <div class="w-[755px]">
+            <div class="border-2 border-black w-full">
+              <h1 class="px-4 py-3 font-normal text-lg">Lengkapi Data</h1>
+              <div class="grid grid-cols-2">
+                <div class="px-4 py-4">
+                  <label for="" class="font-semibold text-sm">Nama</label>
+                  <input
+                    type="text"
+                    class="w-full rounded-lg outline outline-1 outline-black"
+                    placeholder="Masukkan Nama Penyewa"
+                  />
+                  <label for="" class="font-semibold text-sm"
+                    >Tanggal mulai sewa</label
+                  >
+                  <input
+                    type="date"
+                    class="w-full rounded-lg outline outline-1 outline-black"
+                  />
+                </div>
+                <div class="px-4 py-4">
+                  <label for="" class="font-semibold text-sm">No wa</label>
+                  <input
+                    type="text"
+                    class="w-full rounded-lg outline outline-1 outline-black"
+                    placeholder="Masukkan Nomer Whatsapp"
+                  />
+                  <label for="" class="font-semibold text-sm"
+                    >Tanggal Akhir Sewa</label
+                  >
+                  <input
+                    type="date"
+                    class="w-full rounded-lg outline outline-1 outline-black"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[400px] pl-[30px]">
+            <div class="border-2 border-black w-full">
+              <div class="px-4 py-3 font-normal text-lg">Ringkasan Pesanan</div>
+              <div class="flex">
+                <div class="px-4">
+                  <img
+                    src="img/vespa_kuning.jpg"
+                    class="w-20 h-16 rounded-xl"
+                    alt=""
+                  />
+                </div>
+                <div class="basis-full">
+                  <div class="font-medium text-base">Vespa</div>
+                  <div class="flex justify-between">
+                    <div>Manual</div>
+                    <span class="px-4">1</span>
+                  </div>
+                  <div>p</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
