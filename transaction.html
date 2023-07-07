@@ -305,7 +305,9 @@
                   class="hidden"
                   aria-labelledby="accordion-collapse-heading-1"
                 >
-                  <div class="p-5 border border-t-black dark:border-gray-700">
+                  <div
+                    class="p-5 border border-black border-t-black dark:border-gray-700"
+                  >
                     <div class="flex">
                       <button type="button" class="cursor-pointer">
                         <div class="p-5 border-t-black dark:border-gray-700">
@@ -569,7 +571,7 @@
       aria-hidden="true"
       class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
     >
-      <div class="relative w-[550px]">
+      <div class="relative w-[550px] h-[425px]">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
           <!-- Modal body -->
@@ -609,6 +611,8 @@
             class="flex items-center justify-between p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
           >
             <button
+              data-modal-target="confirmationPayment"
+              data-modal-toggle="confirmationPayment"
               data-modal-hide="defaultModal"
               type="button"
               class="text-white bg-black hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -629,7 +633,53 @@
     <!-- Endmodal -->
 
     <!-- modal Confirm payment -->
+    <!-- Main modal -->
+    <div
+      id="confirmationPayment"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+    >
+      <div class="relative w-[550px] h-[425px]">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal body -->
+          <div class="px-3 py-3">
+            <div class="flex justify-between">
+              <div>Total</div>
+              <div>
+                Bayar dalam <span class="text-[#0F7EA1]">00:55:22</span>
+              </div>
+            </div>
+            <div class="font-medium text-2xl pt-3">Rp.45000</div>
+            <div class="font-light text-lg pt-3">Order ID#SEW1</div>
+            <div class="flex justify-between py-3">
+              <div class="text-lg">OVO</div>
+              <img src="img/ovo.png" class="w-7 h-7 bg-center" alt="" />
+            </div>
+            <img src="img/qris.png" class="w-60 mx-auto" alt="QRIS" />
+            <!-- Modal footer -->
 
+            <div class="py-3">
+              <a href="historyTransaction.html" class="">
+                <div class="flex justify-center">
+                  <button
+                    class="w-[320px] bg-black text-white px-7 py-3 rounded-lg"
+                  >
+                    Saya sudah bayar
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="text-center py-3">
+              Selanjutnya akan diarahkan ke Whatsapp untuk <br />
+              melampirkan bukti pembayaran
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- EndModal -->
     <!-- footer -->
     <footer class="pt-12 py-4">
